@@ -1,0 +1,2 @@
+[2017-03-15 14:50:12 INFO ] [main] {http.elephant.httpApiTest:98}------------------Start to run test  2
+[2017-03-15 14:50:13 INFO ] [main] {http.utils.HttpClientUtil:295}-create httpget:http://10.165.125.47:8181/modelStatistics/decisionTableDue?appId=credit-card&endTime=

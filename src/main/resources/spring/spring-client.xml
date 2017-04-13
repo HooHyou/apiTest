@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--  注册中心测试环境 120是pbs，69是其他 -->
+    <!--<dubbo:registry address="zookeeper://10.165.124.120:2181" timeout="18000" port="20880"/>-->
+    <dubbo:registry address="zookeeper://10.165.124.69:2181" timeout="18000"/>
+    <dubbo:application name="dubbo-test" />
+    <dubbo:protocol accesslog="true"/>
+    <dubbo:reference id="shuiyouService" interface="com.netease.wyxd.elephant.client.service.ShuiYouService" check="false" timeout="18000" retries="0"></dubbo:reference>
+    <dubbo:reference id="gjjService" interface="com.netease.wyxd.elephant.client.service.GjjService" check="false" timeout="18000" retries="0"></dubbo:reference>
+    <dubbo:reference id="consumerFinService"  interface="com.netease.wyxd.elephant.client.service.ConsumerFinService" check="false" timeout="18000" retries="0"></dubbo:reference>
+</beans>

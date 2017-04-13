@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.commons:commons-dubbo-client:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/commons/commons-dubbo-client/1.0-SNAPSHOT/commons-dubbo-client-1.0-20150914.033154-3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/commons/commons-dubbo-client/1.0-SNAPSHOT/commons-dubbo-client-1.0-20150914.033154-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/commons/commons-dubbo-client/1.0-SNAPSHOT/commons-dubbo-client-1.0-20150914.033154-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

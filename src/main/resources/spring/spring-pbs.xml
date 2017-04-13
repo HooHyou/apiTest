@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--  注册中心测试环境 -->
+    <dubbo:registry address="zookeeper://10.165.125.79:2181" timeout="18000" port="20880"/>
+    <!--  注册中心预发布环境 -->
+    <!-- <dubbo:registry address="zookeeper://10.164.96.62:2181" timeout="18000" port="20880"/> -->
+    <!-- 测试的版本是1.0.0_dev-->
+    <dubbo:consumer version="1.0.0" timeout="18000"></dubbo:consumer>
+    <dubbo:application name="pbs-service"/>
+    <dubbo:reference id="sealRemoteService" interface="com.netease.pbs.api.authentication.service.SealRemoteService" check="false" timeout="18000" retries="0"></dubbo:reference>
+    <dubbo:reference id="contractRemoteService" interface="com.netease.pbs.api.contract.service.ContractRemoteService" check="false" timeout="18000" retries="0"></dubbo:reference>
+
+
+</beans>

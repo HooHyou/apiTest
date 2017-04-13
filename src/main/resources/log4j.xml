@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+    <!-- 将日志信息输出到控制台 -->
+    <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="dailyRollingFile" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="Threshold" value="info"></param>
+        <param name="ImmediateFlush" value="true"></param>
+        <param name="File" value="logs/test.log"></param>
+
+        <param name="encoding" value="GBK"></param>
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"></param>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss\} %-5p] [%t] {%c:%L}-%m%n"></param>
+        </layout>
+    </appender>
+
+    <!--配置具体要实现的方式，这边只设定了STDOUT,ERROR这2种情况，没有使用到的情况，不要在上面 配置，否则会出错 -->
+    <root>
+        <priority value="INFO"/>
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="dailyRollingFile"/>
+    </root>
+</log4j:configuration>

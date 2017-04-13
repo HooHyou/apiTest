@@ -1,0 +1,82 @@
+{"gjjAccount": {
+"customer": "019558000548",
+"name": "王五",
+"idcard": "331081198401064088",
+"balance": 2490000,
+"lastRecordDate": "2017-02-22",
+"status": "正常",
+"company": "杭州市西湖区递金网络科技公司",
+"city": "杭州",
+"depositAmount": 473200,
+"depositBase": 0,
+"companyRate": "10",
+"personRate": "10",
+"housingSupplementBalance": 0,
+"housingSupplementBase": 0,
+"initDate": "",
+"onceBalance": 0
+},
+"gjjFlows": [
+{
+"company": "xxx网络科技有限公司",
+"type": "汇缴",
+"amount": 144000,
+"balance": 289044,
+"record_date": "2015-07-24",
+"record_month": "201507"
+},
+{
+"company": "xxx网络科技有限公司",
+"type": "汇缴",
+"amount": 144000,
+"balance": 145044,
+"record_date": "2015-07-21",
+"record_month": "201506"
+},
+{
+"company": "",
+"type": "年度结息",
+"amount": 944,
+"balance": 1044,
+"record_date": "2015-07-01",
+"record_month": ""
+}
+],
+"gjjLoan": {
+"contractNo": "02012012107488",
+"name": "王五",
+"idcard": "33108119840106****",
+"phone": "15868492888",
+"address": "杭州市西湖区xxxxx2幢802",
+"bank": "建行中山支行",
+"status": "正常",
+"limit": 52000000,
+"balance": 40290000,
+"period": "20",
+"beginDate": "2012-08-27",
+"endDate": "2032-08-27",
+"loanRate": "3.25",
+"penaltyRate": "4.875",
+"refund": "等额本金"
+},
+"gjjRepaymentFlows": [
+{
+"principleBalance": 40299982,
+"repayPrinciple": -216667,
+"deductDate": "2017-02-20",
+"recordDate": "2017-02-21",
+"penaltyInterest": 0,
+"repayInterest": -109733,
+"repayAmount": -326400
+},
+{
+"principleBalance": 40516649,
+"repayPrinciple": -216667,
+"deductDate": "2017-01-20",
+"recordDate": "2017-01-22",
+"penaltyInterest": 0,
+"repayInterest": -110319,
+"repayAmount": -326986
+}
+]
+}

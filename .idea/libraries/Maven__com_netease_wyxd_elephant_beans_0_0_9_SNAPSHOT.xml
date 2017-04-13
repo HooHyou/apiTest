@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.netease.wyxd.elephant:beans:0.0.9-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netease/wyxd/elephant/beans/0.0.9-SNAPSHOT/beans-0.0.9-20170407.095211-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netease/wyxd/elephant/beans/0.0.9-SNAPSHOT/beans-0.0.9-20170407.095211-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netease/wyxd/elephant/beans/0.0.9-SNAPSHOT/beans-0.0.9-20170407.095211-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
