@@ -197,4 +197,4 @@
 "amount":1000000,"amountBalance":912000,"gmtCreate":1490785739000,
 "gmtModified":1490785739000,"bizTime":1490112000000,"fundFlow":"EXPEND",
 "company":"阿里巴巴(中国)网络技术有限公司","incomeAmount":0,
-"outcomeAmount":1000000,"gmtBizDate":null}],"shuli_repayment_info_house_accumlation_fund":null}
+"outcomeAmount":1000000,"gmtBizDate":null}],"shuli_repayment_info_house_accumulation_fund":null}

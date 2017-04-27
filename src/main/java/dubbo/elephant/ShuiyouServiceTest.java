@@ -1,4 +1,4 @@
-package dubbo.shuiyou;
+package dubbo.elephant;
 
 import com.netease.pbs.api.CommonResultDto;
 import com.netease.pbs.api.authentication.dto.*;
@@ -52,7 +52,7 @@ public class ShuiyouServiceTest extends DubboTestBase {
     public void SaveShuiyou() {
         TxtReadUtil txtReadUtil = new TxtReadUtil();
         ShuiYouDataBean shuiYouDataBean = new ShuiYouDataBean();
-        shuiYouDataBean.setOrderSerial("107904test2");
+        shuiYouDataBean.setOrderSerial("107904test3");
         shuiYouDataBean.setFlag(0l);
         shuiYouDataBean.setData(txtReadUtil.txtRead("shuiyou-json.txt", "key"));
         shuiYouDataBean.setAppCode("credit-card");
@@ -76,8 +76,8 @@ public class ShuiyouServiceTest extends DubboTestBase {
     public void queryShuiYouTagDataTest() {
         TxtReadUtil txtReadUtil = new TxtReadUtil();
         ShuiYouRequestBean requestBean = new ShuiYouRequestBean();
-        requestBean.setApplyNo("107905");
-        requestBean.setOrderSerial("107905");
+        requestBean.setApplyNo("107904test3");
+        requestBean.setOrderSerial("107904test3");
 
         //appCode必须有
         requestBean.setAppCode("credit-card");

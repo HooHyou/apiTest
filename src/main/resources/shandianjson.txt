@@ -22,7 +22,7 @@
 "type": "汇缴",
 "amount": 144000,
 "balance": 289044,
-"record_date": "2015-07-24",
+"recordDate": "2015-07-24",
 "record_month": "201507"
 },
 {
@@ -30,7 +30,7 @@
 "type": "汇缴",
 "amount": 144000,
 "balance": 145044,
-"record_date": "2015-07-21",
+"recordDate": "2015-07-21",
 "record_month": "201506"
 },
 {
@@ -38,7 +38,7 @@
 "type": "年度结息",
 "amount": 944,
 "balance": 1044,
-"record_date": "2015-07-01",
+"recordDate": "2015-07-01",
 "record_month": ""
 }
 ],

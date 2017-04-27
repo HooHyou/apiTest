@@ -1,4 +1,4 @@
-package dubbo.gjjloan;
+package dubbo.elephant;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;

@@ -1,4 +1,4 @@
-package dubbo.shuiyou;
+package dubbo.elephant;
 
 import com.netease.wyxd.elephant.client.bean.request.consumerfin.ConsumerFinRequestBean;
 import com.netease.wyxd.elephant.client.bean.request.shuiyou.ShuiYouRequestBean;
