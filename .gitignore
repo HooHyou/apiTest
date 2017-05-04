@@ -1,0 +1,10 @@
+.idea/
+target/
+*.iml
+*.log
+.settings/
+.classpath
+.project
+*.rdb
+.DS_Store
+WebContent/
