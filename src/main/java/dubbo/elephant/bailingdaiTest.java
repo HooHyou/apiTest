@@ -18,7 +18,7 @@ public class bailingdaiTest extends DubboTestBase{
     @Test
     public void bailingdaiTest() {
         ConsumerFinRequestBean requestBean = new ConsumerFinRequestBean();
-        requestBean.setApplyNo("107905");
+        requestBean.setApplyNo("107904");
         //requestBean.setIdCardNo("1edc7efeab730176db7e4ed38d642772");
 
         requestBean.setBid("xxx");

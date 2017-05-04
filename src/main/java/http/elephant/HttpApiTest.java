@@ -6,16 +6,14 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by Chenxj on 2017/3/7.
  */
-public class httpApiTest {
+public class HttpApiTest {
 
-    public static Logger log= LogManager.getLogger(httpApiTest.class);
+    public static Logger log= LogManager.getLogger(HttpApiTest.class);
 
     @Test(dataProvider = "pointModelAnalyze")
     public void pointModelAnalyze(String caseid,String except,String startTime,String endTime,String appId,String modelId,

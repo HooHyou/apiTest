@@ -171,7 +171,7 @@ public class HttpClientUtil {
         return result;
     }
 
-    public String doPostJson(String url, String json, String charset) {
+    public static String doPostJson(String url, String json, String charset) {
         CloseableHttpClient httpClient = null;
         HttpPost httpPost = null;
         String result = null;
@@ -181,15 +181,6 @@ public class HttpClientUtil {
             //设置参数
             StringEntity s = new StringEntity(json);
             httpPost.setEntity(s);
-
-            httpPost.setHeader("Content-Type", "application/json");
-            httpPost.setHeader("X-Deviceid", "EE81B266F2D9AAD0458DECB240246750");
-            httpPost.setHeader("X-Appver", "10.4.5.0");
-            httpPost.setHeader("X-Platform", "3");
-            httpPost.setHeader("X-Mc", "21000020");
-            httpPost.setHeader("User-Agent", "WacApp/10.4.5 (iPhone; iOS 9.2.1; Scale/2.00)");
-            httpPost.setHeader("X-Uuid", "A24D1C4405FB4C02B5EF9F5C53204733");
-
 
             HttpResponse response = httpClient.execute(httpPost);
             if (response != null) {
