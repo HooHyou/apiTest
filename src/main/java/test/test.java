@@ -1,7 +1,12 @@
 package test;
 
+import http.utils.OracleUtil;
 import org.testng.annotations.Test;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +24,34 @@ public class test {
 //
 //        String str2 = new StringBuilder("Str").append("ing").toString();
 //        System.out.println(str2.intern()==str2);
+        // 创建一个数据库连接
+        Connection connection = null;
+        // 创建预编译语句对象，一般都是用这个而不用Statement
+        PreparedStatement pstm = null;
+        // 创建一个结果集对象
+        ResultSet rs = null;
+
+        OracleUtil ou = new OracleUtil();
+        connection = ou.getConnection();
+        String sql = "select * from student where 1 = 1";
+        try {
+            pstm = connection.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            while (rs.next()) {
+                String id = rs.getString("id");
+                String name = rs.getString("stu_name");
+                String gender = rs.getString("gender");
+                String age = rs.getString("age");
+                String address = rs.getString("address");
+                System.out.println(id + "\t" + name + "\t" + gender + "\t"
+                        + age + "\t" + address);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            ou.ReleaseResource();
+        }
+
     }
 
     public void test1(List list1){

@@ -12,7 +12,7 @@ public class OracleUtil {
     private static String USERNAMR = "orcl";
     private static String PASSWORD = "orcl";
     private static String DRVIER = "oracle.jdbc.OracleDriver";
-    private static String URL = "jdbc:oracle:thin:@192.168.0.X:1521:xe";
+    private static String URL = "jdbc:oracle:thin:@10.165.177.80:9573:epaytest_pri";
 
     // 创建一个数据库连接
     Connection connection = null;
