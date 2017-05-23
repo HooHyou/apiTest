@@ -29,7 +29,7 @@ public class bailingdaiTest extends DubboTestBase{
             DataResponse<Integer> response = consumerFinService.queryWangYiScore(requestBean);
             log.info("返回的描述："+response.getRespDesc());
             log.info("返回的分数："+response.getResult());
-            Assert.assertEquals(response.getRespCode(), "0", "返回值和期望不符：");
+            Assert.assertEquals(response.getRespCode(), "130001", "返回值和期望不符：");
 
         } catch (Exception e) {
             log.error(e.getMessage(), e);
